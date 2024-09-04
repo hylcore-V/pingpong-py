@@ -3,8 +3,8 @@
 </h1>
 
 <h1 align="center">
-  Pingpong 
-Artificial Intelligence 
+   
+AI - Pingpong 
 </h1>
 
 <p align="center">
@@ -80,9 +80,4 @@ O objetivo desse jogo é fazer com que a palheta impeça a bolinha de tocar no c
 <h1 align="center">
   <img src="https://user-images.githubusercontent.com/40550247/72691686-149e9080-3b06-11ea-863f-10a38f5f6e60.gif"/>
 </h1>
-
-## License
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
 ---
