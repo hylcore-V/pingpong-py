@@ -10,36 +10,36 @@ AI - Pingpong
 * Python (>= 3.6)
 
 ## Getting Started
-1. Fork este repositório e clone em sua máquina
-2. Mude o diretório para `pingpong-IA` onde você o clonou;
-3. No terminal, execute:
+1. Fork this repository and clone it to your machine.
+2. Change the directory to pingpong-AI where you cloned it.
+3. In the terminal, execute:
 
 ```bash
 /* Install dependencies */
 
 $ pip install -r requeriments.txt
 
-/* Coletar dados */
+/* Collect data */
 
 $ python PingPongCollect.py
 
-/* Treinar dados */
+/* Train data */
 
 $ python NeuralNetwork.py
 
-/* Executar IA */
+/* Execute AI */
 
-$ python PingPongIA.py
+$ python PingPongAI.py
 ```
 
 ### Neural Network
-A rede neural possui: uma camada de entrada de 2 neurônios, uma camada oculta de 30 neurônios e uma camada de saída de 1 neurônio. É possível personalizar a quantidade de neurônios de cada uma das camadas.
+The neural network has: an input layer with 2 neurons, a hidden layer with 30 neurons, and an output layer with 1 neuron. It is possible to customize the number of neurons in each layer.
 
 
 ## File Structure
 
 ```bash
-pingpong-IA
+pingpong-AI
 ├── src/
 │   ├── database/
 │   │   ├── controller/
@@ -52,7 +52,7 @@ pingpong-IA
 │   ├── network/
 │   │   └── NeuralNetwork.py
 │   ├── PingPongCollect.py
-│   └── PingPongIA.py
+│   └── PingPongAI.py
 ├── .gitignore
 ├── LICENSE.md
 ├── README.md
@@ -60,7 +60,7 @@ pingpong-IA
 ```
 
 ### Vision
-O objetivo desse jogo é fazer com que a palheta impeça a bolinha de tocar no chão. A implementação consiste no aprendizado de máquina supervisionado, portanto, teremos que passar ao jogo dados iniciais para que ele processe o aprendizado. A partir do arquivo ``src/PingPongCollect.py``, será executado o jogo para que você jogue, e sejam coletadas informações que serão usadas no aprendizado de sua máquina, então, os dados serão salvos em ``src/database/data``. Logo em seguida, você poderá treinar seus dados de duas formas. Na primeira forma, você poderá executar os dados coletados diretamente na rede neural sem precisar jogar, nesse caso, no ```terminal```, será impressa uma informação, que é a taxa de error do treinamento de sua rede neural, quanto menor a taxa, melhor, após isso, no final deste treinamento, serão salvos os pesos em ```src/database/weights``` (esses pesos são as informações dos neurônios treinados na sua rede neural, ou seja, eles funcionam como um cérebro com o conhecimento em si). Na segunda forma, você irá treinar a sua rede diretamente jogando, no caso, enquanto se joga, a rede treina. Para fazer a sua máquina jogar, você terá que executar o arquivo ```src/PingPongIA.py```. Nele, ou você seta os pesos emitidos pelo treinamento de sua rede ou não passar nenhum peso e deixar o aprendizado começar do zero.
+The objective of this game is to prevent the paddle from letting the ball touch the ground. The implementation consists of supervised machine learning, so we will have to provide the game with initial data for it to process the learning. Starting from the file src/PingPongCollect.py, the game will be executed for you to play, and information will be collected that will be used in the learning of your machine; then, the data will be saved in src/database/data. Immediately after, you can train your data in two ways. In the first way, you can execute the collected data directly in the neural network without needing to play; in this case, in the terminal, information will be printed, which is the error rate of your neural network's training—the lower the rate, the better. After this, at the end of this training, the weights will be saved in src/database/weights (these weights are the information of the neurons trained in your neural network, i.e., they function like a brain with the knowledge itself). In the second way, you will train your network directly by playing; in this case, while playing, the network trains. To make your machine play, you will have to execute the file src/PingPongAI.py. In it, you either set the weights emitted by the training of your network or pass no weights and let the learning start from scratch.
 
 <h1 align="center">
   <img src="https://user-images.githubusercontent.com/40550247/72691686-149e9080-3b06-11ea-863f-10a38f5f6e60.gif"/>
